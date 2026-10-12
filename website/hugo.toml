@@ -6,7 +6,7 @@ title = 'Hugo CMS-Test'
 theme = 'ananke-main'
 
 [params]
-  site_logo = '/images/logo.png'
+  site_logo = '/Hugo-test/images/logo.png'
   mainSections = ['blog']
   show_recent_posts = false
 
