@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Hugo CMS-Test</title>
-    <link>https://DewischTom.github.io/hugo-test/blog/</link>
+    <link>https://DewischTom.github.io/Hugo-test/blog/</link>
     <description>Recent content in Blog on Hugo CMS-Test</description>
     <generator>Hugo</generator>
     <language>de-AT</language>
     <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://DewischTom.github.io/hugo-test/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://DewischTom.github.io/Hugo-test/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo kennenlernen</title>
-      <link>https://DewischTom.github.io/hugo-test/blog/hugo-kennenlernen/</link>
+      <link>https://DewischTom.github.io/Hugo-test/blog/hugo-kennenlernen/</link>
       <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://DewischTom.github.io/hugo-test/blog/hugo-kennenlernen/</guid>
+      <guid>https://DewischTom.github.io/Hugo-test/blog/hugo-kennenlernen/</guid>
       <description>&lt;p&gt;Hugo erstellt schnelle Websites aus Markdown-Dateien.&#xA;Erfahre, wie Inhalte, Templates und Design zusammenarbeiten.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inhalte mit Markdown</title>
-      <link>https://DewischTom.github.io/hugo-test/blog/inhalte-mit-markdown/</link>
+      <link>https://DewischTom.github.io/Hugo-test/blog/inhalte-mit-markdown/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://DewischTom.github.io/hugo-test/blog/inhalte-mit-markdown/</guid>
+      <guid>https://DewischTom.github.io/Hugo-test/blog/inhalte-mit-markdown/</guid>
       <description>&lt;p&gt;Mit Markdown kannst du Texte einfach strukturieren und formatieren.&#xA;Lerne Überschriften, Listen und Hervorhebungen kennen.&lt;/p&gt;</description>
     </item>
   </channel>

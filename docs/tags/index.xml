@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo CMS-Test</title>
-    <link>https://DewischTom.github.io/hugo-test/tags/</link>
+    <link>https://DewischTom.github.io/Hugo-test/tags/</link>
     <description>Recent content in Tags on Hugo CMS-Test</description>
     <generator>Hugo</generator>
     <language>de-AT</language>
-    <atom:link href="https://DewischTom.github.io/hugo-test/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://DewischTom.github.io/Hugo-test/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

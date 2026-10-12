@@ -1,4 +1,5 @@
-baseURL = 'https://DewischTom.github.io/hugo-test/'
+baseURL = 'https://DewischTom.github.io/Hugo-test/'
+relativeURLs = true
 languageCode = 'de-AT'
 defaultContentLanguage = 'de'
 title = 'Hugo CMS-Test'
