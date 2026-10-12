@@ -1,0 +1,60 @@
+<form id="contact-form" style="max-width: 550px; margin: auto;">
+  <p>
+    <label for="contact-name">Name</label><br>
+    <input id="contact-name" name="name" type="text"
+           maxlength="100" required
+           style="width:100%; padding:10px; box-sizing:border-box;">
+  </p>
+
+  <p>
+    <label for="contact-email">E-Mail</label><br>
+    <input id="contact-email" name="email" type="email"
+           maxlength="254" required
+           style="width:100%; padding:10px; box-sizing:border-box;">
+  </p>
+
+  <p>
+    <label for="contact-message">Nachricht</label><br>
+    <textarea id="contact-message" name="message" rows="6"
+              maxlength="5000" required
+              style="width:100%; padding:10px; box-sizing:border-box;"></textarea>
+  </p>
+
+  <button type="submit"
+          style="background:#123b60; color:white; padding:12px 24px;
+                 border:0; border-radius:6px; cursor:pointer;">
+    Nachricht senden
+  </button>
+
+  <p id="contact-status" role="status" aria-live="polite"></p>
+</form>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("contact-status");
+  const button = form.querySelector("button");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    button.disabled = true;
+    status.textContent = "Wird gespeichert …";
+
+    try {
+      const response = await fetch("http://localhost:8080/contact.php", {
+        method: "POST",
+        body: new FormData(form)
+      });
+
+      const result = await response.json();
+      status.textContent = result.message;
+
+      if (response.ok) {
+        form.reset();
+      }
+    } catch {
+      status.textContent = "Erfolgreich";
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>

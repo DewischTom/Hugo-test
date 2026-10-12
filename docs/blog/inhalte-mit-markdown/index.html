@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Inhalte mit Markdown | Hugo CMS-Test</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Mit Markdown kannst du Texte einfach strukturieren und formatieren.
+Lerne Überschriften, Listen und Hervorhebungen kennen.">
+    <meta name="generator" content="Hugo 0.160.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/hugo-test/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://DewischTom.github.io/hugo-test/blog/inhalte-mit-markdown/">
+    
+
+    
+    
+    <meta property="og:url" content="https://DewischTom.github.io/hugo-test/blog/inhalte-mit-markdown/">
+  <meta property="og:site_name" content="Hugo CMS-Test">
+  <meta property="og:title" content="Inhalte mit Markdown">
+  <meta property="og:description" content="Mit Markdown kannst du Texte einfach strukturieren und formatieren. Lerne Überschriften, Listen und Hervorhebungen kennen.">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-10-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-10-11T00:00:00+00:00">
+
+  <meta itemprop="name" content="Inhalte mit Markdown">
+  <meta itemprop="description" content="Mit Markdown kannst du Texte einfach strukturieren und formatieren. Lerne Überschriften, Listen und Hervorhebungen kennen.">
+  <meta itemprop="datePublished" content="2026-10-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-10-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="96">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Inhalte mit Markdown">
+  <meta name="twitter:description" content="Mit Markdown kannst du Texte einfach strukturieren und formatieren. Lerne Überschriften, Listen und Hervorhebungen kennen.">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-page is-page page-artikel-2">
+   
+  
+
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/hugo-test/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        <img src="/images/logo.png" class="w100 mw5-ns" alt="Hugo CMS-Test" />
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/hugo-test/" title="Startseite Seite">
+              Startseite
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/hugo-test/blog/" title="Blog Seite">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/hugo-test/blog/hugo-kennenlernen/" title="Hugo kennenlernen Seite">
+              Hugo kennenlernen
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/hugo-test/blog/inhalte-mit-markdown/" title="Markdown Seite">
+              Markdown
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/hugo-test/#artikel" title="Artikelübersicht Seite">
+              Artikelübersicht
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+<main class="pb7" role="main">
+  
+
+  <article class="page-artikel-2 flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
+    <a class="link dim" href="https://DewischTom.github.io/hugo-test/blog/">Blog</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Inhalte mit Markdown</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-10-11T00:00:00Z">Oktober 11, 2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>Mit Markdown kannst du Texte einfach strukturieren und formatieren.
+Lerne Überschriften, Listen und Hervorhebungen kennen.</p>
+<h2 id="was-ist-markdown">Was ist Markdown?</h2>
+<p>Markdown ist eine einfache Auszeichnungssprache.
+Mit wenigen Zeichen lassen sich Texte formatieren.</p>
+<p>Hugo wandelt diese Inhalte beim Erstellen der Website in HTML um.</p>
+<h2 id="überschriften">Überschriften</h2>
+<p>Eine Überschrift wird mit einem oder mehreren
+Rautezeichen geschrieben.</p>
+<p>Zum Beispiel:</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>## Meine Überschrift</span></span></code></pre></div>
+  </div><h2 id="listen">Listen</h2>
+<p>Mit einem Bindestrich kannst du eine Liste erstellen:</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>- Erster Punkt
+</span></span><span style="display:flex;"><span>- Zweiter Punkt
+</span></span><span style="display:flex;"><span>- Dritter Punkt</span></span></code></pre></div>
+  </div><h2 id="hervorhebungen">Hervorhebungen</h2>
+<p>Mit Sternchen kannst du Wörter hervorheben:</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>**Dieser Text ist fett.**
+</span></span><span style="display:flex;"><span>*Dieser Text ist kursiv.*</span></span></code></pre></div>
+  </div><p><a href="/hugo-test/blog/">Zur Blogübersicht</a></p>
+<p><a href="/hugo-test/blog/">Zur Startseite</a></p><ul class="pa0">
+  
+</ul><ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://DewischTom.github.io/hugo-test/" >
+    &copy;  Hugo CMS-Test 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
